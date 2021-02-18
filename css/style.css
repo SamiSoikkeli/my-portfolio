@@ -143,31 +143,6 @@ main {
   display: block;
 }
 
-/*CUSTOM CURSOR*/
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-
-.cursor--small {
-  width: 5px;
-  height: 5px;
-  left: -2.5px;
-  top: -2.5px;
-  border-radius: 50%;
-  z-index: 11000;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.cursor--canvas {
-  width: 100vw;
-  height: 100vh;
-  z-index: 12000;
-}
-
-/*CUSTOM CURSOR 2*/
 #magic-cursor {
   position: absolute;
   width: 30px;
@@ -248,11 +223,28 @@ header nav {
           align-items: center;
 }
 
-header nav svg {
-  width: 4vh;
+header nav .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2em;
+}
+
+header nav .social-icons a {
+  text-decoration: none;
+}
+
+header nav .social-icons svg {
+  width: 3.5vh;
   -webkit-transform: translateY(-0.5vh);
           transform: translateY(-0.5vh);
-  margin-left: 5em;
+  margin-left: 1em;
   margin-right: 2.5em;
 }
 
@@ -280,7 +272,7 @@ header .menu li {
 }
 
 header .menu li a {
-  font-size: 1.175rem;
+  font-size: .8rem;
   color: #FFF;
   text-decoration: none;
   -webkit-transition: all 0.45s;
@@ -386,7 +378,7 @@ header .menu li a:hover {
 
 .l-site .m-portfolio .container .portfolio-title {
   float: right;
-  height: 70vh;
+  height: 60vh;
 }
 
 .l-site .m-portfolio .container .portfolio-title h1 {
@@ -578,6 +570,7 @@ header .menu li a:hover {
 }
 
 .l-site .m-about .container .tools .tech svg {
+  margin-top: 2rem;
   width: 25vh;
 }
 
@@ -590,13 +583,19 @@ header .menu li a:hover {
       justify-content: space-around;
 }
 
-.l-site .m-about .contact .container h1 {
+.l-site .m-about .contact .container a {
   color: #FFF;
   font-size: 7rem;
   font-weight: 700;
   margin-top: 5vh;
   margin-left: 0;
   text-transform: capitalize;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.l-site .m-about .contact .container a:hover {
+  text-decoration: underline;
 }
 
 .l-site .m-about .contact .container .ctn-atractive {
