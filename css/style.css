@@ -569,11 +569,6 @@ header .menu li a:hover {
   width: 20%;
 }
 
-.l-site .m-about .container .tools .tech svg {
-  margin-top: 2rem;
-  width: 25vh;
-}
-
 .l-site .m-about .contact {
   overflow: hidden;
 }
